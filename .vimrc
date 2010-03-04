@@ -24,14 +24,14 @@ if has("gui_macvim")
     set gfn=Anonymous\ Pro:h12
 else
     set gfn=Anonymous\ Pro\ 10
-    set lines=65
-    set columns=200
 endif
 
 " Scheme
 if has("gui_running")
 	colorscheme wombat
 	set guioptions-=T   " no toolbar
+    set lines=65
+    set columns=200
 else
     colorscheme ron
 endif
