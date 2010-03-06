@@ -105,6 +105,10 @@ set laststatus=2
 set magic
 
 " Format the statusline
+function! CurDir()
+    let curdir = substitute(getcwd(), '/Users/Jie/', "~/", "g")
+    return curdir
+endfunction
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
 """""""""""""""""""""""""""""
